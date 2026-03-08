@@ -1,0 +1,250 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+
+background-image:url("/static/images/bg_long.png");
+background-size:100%;
+background-position:top-left;
+padding:40px 80px;
+max-width:1400px;
+margin:auto;
+
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(255,255,255,0.3);
+backdrop-filter:blur(10px);
+
+padding:15px 30px;
+border-radius:15px;
+
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+font-family:'Kaushan Script';
+font-size:28px;
+color:#6b0f1a;
+}
+
+.logo-area img{
+width:40px;
+}
+
+.nav-links{
+
+display:flex;
+align-items:center;
+
+}
+
+.nav-links a{
+
+margin-left:25px;
+text-decoration:none;
+color:#6b0f1a;
+
+padding:8px 14px;
+border-radius:8px;
+
+font-weight:500;
+
+transition:0.25s;
+
+}
+
+.nav-links a:hover{
+color:#1b5e20;
+}
+
+.active{
+
+background:#1b5e20;
+color:white !important;
+
+}
+
+
+/* LOGOUT BUTTON */
+
+.logout-btn{
+
+background:#8b0000;   /* maroon */
+
+color:white !important;
+
+padding:8px 18px;
+
+border-radius:10px;
+
+margin-left:25px;
+
+font-weight:500;
+
+text-decoration:none;
+
+transition:0.25s;
+
+}
+
+.logout-btn:hover{
+
+background:#5a0000;   /* dark maroon */
+
+color:white !important;
+
+}
+
+
+
+/* PAGE TITLE */
+
+.title{
+
+text-align:center;
+margin:50px 0 40px 0;
+font-size:36px;
+
+}
+
+
+/* HISTORY CONTAINER */
+
+.history-container{
+
+max-width:1100px;
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(3, 1fr);
+
+gap:25px;
+
+}
+
+/* HISTORY CARD */
+
+.history-card{
+
+background:rgba(255,255,255,0.25);
+
+backdrop-filter:blur(10px);
+
+padding:22px;
+
+border-radius:16px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+transition:0.2s;
+
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+
+min-height:190px;
+
+}
+
+.history-card:hover{
+
+transform:translateY(-4px);
+
+}
+
+.history-card h3{
+
+margin-bottom:18px;
+
+}
+
+
+/* CAREER RESULTS */
+
+.career-results{
+
+display:flex;
+
+flex-direction:column;
+
+gap:8px;
+
+margin-bottom:15px;
+
+}
+
+.career-item{
+
+background:#f4d8d8;
+
+padding:8px 12px;
+
+border-radius:14px;
+
+display:flex;
+
+justify-content:space-between;
+
+font-size:13px;
+
+}
+
+
+/* SCORE BADGE */
+
+.score{
+
+background:#1b5e20;
+
+color:white;
+
+padding:4px 10px;
+
+border-radius:20px;
+
+font-size:13px;
+
+}
+
+
+/* BUTTON */
+
+.view-analysis{
+
+background:#6b0f1a;
+
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.25s;
+
+}
+
+.view-analysis:hover{
+
+background:#1b5e20;
+
+}

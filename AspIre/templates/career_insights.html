@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>AspIre Career Insights</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/career_insights.css') }}">
+
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+
+<div class="logo-area">
+<img src="{{ url_for('static', filename='images/logo.png') }}">
+<span>AspIre</span>
+</div>
+
+<div class="nav-links">
+<a href="/">Home</a>
+<a class="active">Career Insights</a>
+<a href="/results">Results</a>
+<a href="/history">History</a>
+<a href="/logout">Logout</a>
+</div>
+
+</div>
+
+
+<h1 class="title">Career Insights</h1>
+
+
+<div class="career-grid">
+
+<!-- CAREER DESCRIPTION -->
+
+<div class="career-card">
+
+<h2>{{ data.title }}</h2>
+
+<p>{{ data.description }}</p>
+
+</div>
+
+
+<div class="career-options-card">
+
+<h3>🔍 Career Paths You Can Explore</h3>
+
+<div class="career-tags">
+
+<span>{{ data.title }}</span>
+<span>Senior {{ data.title }}</span>
+<span>Lead {{ data.title }}</span>
+<span>Specialist {{ data.title }}</span>
+
+</div>
+
+</div>
+
+
+<!-- COURSES -->
+
+<div class="courses-card">
+
+<h3>🎓 Recommended Courses</h3>
+
+<div class="course-item">
+<span>Machine Learning – Andrew Ng (Coursera)</span>
+<a href="https://www.coursera.org/learn/machine-learning" target="_blank">
+<button class="view-btn">View</button>
+</a>
+</div>
+
+<div class="course-item">
+<span>Python for Data Science – IBM</span>
+<a href="https://www.coursera.org/learn/python-for-applied-data-science-ai" target="_blank">
+<button class="view-btn">View</button>
+</a>
+</div>
+
+<div class="course-item">
+<span>Data Science Professional Certificate – IBM</span>
+<a href="https://www.coursera.org/professional-certificates/ibm-data-science" target="_blank">
+<button class="view-btn">View</button>
+</a>
+</div>
+
+<div class="course-item">
+<span>Statistics for Data Science – Harvard (edX)</span>
+<a href="https://www.edx.org/learn/statistics/harvard-university-statistics-and-r" target="_blank">
+<button class="view-btn">View</button>
+</a>
+</div>
+
+</div>
+
+
+<!-- DEMAND CARD -->
+
+<div class="demand-card">
+
+<h3>📈 Very High Demand</h3>
+
+<div class="countries">
+<span>🇺🇸 USA</span>
+<span>🇩🇪 Germany</span>
+<span>🇨🇦 Canada</span>
+</div>
+
+<p>
+This career currently has strong global demand and excellent future opportunities.
+</p>
+
+</div>
+
+
+<!-- ROADMAP -->
+
+<div class="roadmap-card">
+
+<h3>📍 Roadmap</h3>
+
+<ul>
+<li>Build strong foundational knowledge</li>
+<li>Develop practical skills through projects</li>
+<li>Gain real experience through internships or entry-level roles</li>
+</ul>
+
+</div>
+
+
+<!-- FUTURE DEMAND -->
+
+<div class="future-card">
+
+<h3>🔥 Future Demand</h3>
+
+<p>
+This career field is expected to grow significantly over the next decade.
+</p>
+
+</div>
+
+
+<!-- SKILLS -->
+
+<div class="skills-card">
+
+<h3>🎯 Essential Skills</h3>
+
+<ul>
+
+{% for skill in data.skills %}
+
+<li>{{ skill }}</li>
+
+{% endfor %}
+
+</ul>
+
+</div>
+
+</div>
+
+</body>
+</html>

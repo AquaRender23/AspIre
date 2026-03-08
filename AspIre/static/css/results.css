@@ -1,0 +1,296 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+
+/* BACKGROUND */
+
+body{
+
+background-image:url("/static/images/bg.jpeg");
+background-size:cover;
+background-position:center;
+
+padding:40px 80px;
+max-width:1400px;
+margin:auto;
+
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:15px 30px;
+border-radius:20px;
+
+background:rgba(255,255,255,0.3);
+backdrop-filter:blur(10px);
+
+}
+
+
+/* LOGO */
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:45px;
+}
+
+.logo h2{
+color:#7a1c1c;
+}
+
+
+
+/* NAV LINKS */
+
+nav ul{
+display:flex;
+gap:40px;
+list-style:none;
+}
+
+nav a{
+
+text-decoration:none;
+color:#7a1c1c;
+font-weight:500;
+
+padding:8px 16px;
+border-radius:10px;
+
+transition:0.3s;
+
+}
+
+/* HOVER */
+
+nav a:hover:not(.active){
+color:#1f6a2f;
+}
+
+nav a{
+transition: all 0.25s ease;
+}
+
+
+/* ACTIVE PAGE */
+
+nav .active{
+
+background:#1f6a2f;
+color:white;
+
+}
+
+
+
+/* TITLE */
+
+.results-title{
+
+text-align:center;
+margin-top:50px;
+margin-bottom:40px;
+
+}
+
+.results-title h1{
+
+font-size:40px;
+color:#6d1d1d;
+
+}
+
+.results-title p{
+
+margin-top:10px;
+color:#555;
+
+}
+
+
+
+/* RESULT CONTAINER */
+
+.results-container{
+
+display:flex;
+flex-direction:column;
+gap:25px;
+
+}
+
+
+
+/* RESULT CARD */
+
+.result-card{
+
+display:flex;
+align-items:center;
+gap:25px;
+
+padding:20px;
+
+background:rgba(255,255,255,0.6);
+
+border-radius:18px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.05);
+
+}
+
+
+
+/* RANK */
+
+.rank{
+
+width:40px;
+height:40px;
+
+background:#e0574f;
+
+color:white;
+
+border-radius:50%;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+font-weight:600;
+
+}
+
+
+
+/* IMAGE */
+
+.career-img{
+
+width:90px;
+
+}
+
+
+
+/* CAREER INFO */
+
+.career-info{
+
+flex:1;
+
+}
+
+.career-info h2{
+
+color:#6b1d1d;
+margin-bottom:5px;
+
+}
+
+.career-info p{
+
+color:#555;
+margin-bottom:10px;
+
+}
+
+
+
+/* VIEW BUTTON */
+
+.view-btn{
+
+background:#d94b42;
+
+border:none;
+
+padding:8px 18px;
+
+color:white;
+
+border-radius:8px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.view-btn:hover{
+
+background:#1f6a2f;
+
+}
+
+
+
+/* SCORE */
+
+.score{
+
+background:#1f6a2f;
+
+color:white;
+
+padding:8px 15px;
+
+border-radius:20px;
+
+font-weight:600;
+
+}
+
+
+
+/* RETAKE */
+
+.retake{
+
+text-align:center;
+margin-top:40px;
+
+}
+
+.retake button{
+
+background:#d94b42;
+
+border:none;
+
+padding:14px 30px;
+
+color:white;
+
+font-size:16px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.retake button:hover{
+
+background:#1f6a2f;
+
+}

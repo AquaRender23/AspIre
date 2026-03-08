@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Aspire Career Assessment</title>
+<link rel="stylesheet" href="/static/css/questionnaire.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="logo">
+<img src="/static/images/logo.png">
+
+<h2 class="aspire">
+<span class="ai">A</span><span class="spire">SP</span><span class="ai">I</span><span class="spire">RE</span>
+</h2>
+</div>
+
+<div class="menu">
+<a href="/home">Home</a>
+<a href="/history">History</a>
+<a href="/logout" class="logout-btn">Logout</a>
+</div>
+
+</div>
+
+
+<!-- HEADER -->
+
+<div class="hero">
+
+<h1>Aspire Career Assessment</h1>
+
+<p>
+Fill in the details below to receive your AI-powered career recommendation.
+</p>
+
+</div>
+
+
+
+<div class="form-container">
+
+<form action="/predict" method="POST">
+
+
+<!-- GENDER -->
+
+<h3>Gender</h3>
+
+<div class="two-col">
+
+<label class="radio-box">
+Female
+<input type="radio" name="gender" value="Female" required>
+</label>
+
+<label class="radio-box">
+Male
+<input type="radio" name="gender" value="Male">
+</label>
+
+<label class="radio-box">
+Other
+<input type="radio" name="gender" value="Other">
+</label>
+
+</div>
+
+
+
+<!-- UG COURSE -->
+
+<h3>UG Course</h3>
+
+<input type="text" name="ug_course" placeholder="Eg: B.Tech, B.Sc, BCA" required>
+
+
+
+<!-- UG SPECIALIZATION -->
+
+<h3>UG Specialization</h3>
+
+<input type="text" name="ug_specialization" placeholder="Example: AI, Robotics, Marketing" required>
+
+
+
+<!-- PRIMARY INTERESTS -->
+
+<h3>Primary Interests</h3>
+
+<div class="two-col">
+
+<label class="radio-box">
+Programming
+<input type="radio" name="interests" value="Programming" required>
+</label>
+
+<label class="radio-box">
+Analytics
+<input type="radio" name="interests" value="Analytics">
+</label>
+
+<label class="radio-box">
+Design
+<input type="radio" name="interests" value="Design">
+</label>
+
+<label class="radio-box">
+Business
+<input type="radio" name="interests" value="Business">
+</label>
+
+<label class="radio-box">
+Teaching
+<input type="radio" name="interests" value="Teaching">
+</label>
+
+<label class="radio-box">
+Engineering
+<input type="radio" name="interests" value="Engineering">
+</label>
+
+<label class="radio-box">
+Medical
+<input type="radio" name="interests" value="Medical">
+</label>
+
+<label class="radio-box">
+Law
+<input type="radio" name="interests" value="Law">
+</label>
+
+</div>
+
+
+
+<!-- MAIN SKILLS -->
+
+<h3>Main Skills</h3>
+
+<div class="two-col">
+
+<label class="radio-box">
+Python
+<input type="radio" name="skills" value="Python" required>
+</label>
+
+<label class="radio-box">
+Machine Learning
+<input type="radio" name="skills" value="Machine Learning">
+</label>
+
+<label class="radio-box">
+Communication
+<input type="radio" name="skills" value="Communication">
+</label>
+
+<label class="radio-box">
+Management
+<input type="radio" name="skills" value="Management">
+</label>
+
+<label class="radio-box">
+Design
+<input type="radio" name="skills" value="Design">
+</label>
+
+<label class="radio-box">
+Problem Solving
+<input type="radio" name="skills" value="Problem Solving">
+</label>
+
+<label class="radio-box">
+Biology
+<input type="radio" name="skills" value="Biology">
+</label>
+
+<label class="radio-box">
+Legal Writing
+<input type="radio" name="skills" value="Legal Writing">
+</label>
+
+</div>
+
+
+
+<!-- CGPA -->
+
+<h3>CGPA Range</h3>
+
+<select name="cgpa" required>
+
+<option value="">Select CGPA</option>
+<option value="Below 6">Below 6</option>
+<option value="6-7">6 - 7</option>
+<option value="7-8">7 - 8</option>
+<option value="8-9">8 - 9</option>
+<option value="Above 9">Above 9</option>
+
+</select>
+
+
+
+<!-- CERTIFICATION -->
+
+<h3>Have you completed any certification courses?</h3>
+
+<div class="yesno">
+
+<label class="radio-box">
+Yes
+<input type="radio" name="certification" value="Yes" required>
+</label>
+
+<label class="radio-box">
+No
+<input type="radio" name="certification" value="No">
+</label>
+
+</div>
+
+
+<label>Certification Title</label>
+
+<input type="text" name="certification_title" placeholder="Eg: Machine Learning">
+
+
+
+<!-- WORKING -->
+
+<h3>Are you currently working?</h3>
+
+<div class="yesno">
+
+<label class="radio-box">
+Yes
+<input type="radio" name="working" value="Yes" required>
+</label>
+
+<label class="radio-box">
+No
+<input type="radio" name="working" value="No">
+</label>
+
+</div>
+
+
+
+<!-- MASTERS -->
+
+<h3>Do you plan to pursue or have completed a Master's degree?</h3>
+
+<div class="yesno">
+
+<label class="radio-box">
+Yes
+<input type="radio" name="masters" value="Yes" required>
+</label>
+
+<label class="radio-box">
+No
+<input type="radio" name="masters" value="No">
+</label>
+
+</div>
+
+
+
+<br>
+
+<button type="submit" class="submit-btn">
+Get My Career Recommendation
+</button>
+
+
+</form>
+
+</div>
+
+</body>
+</html>

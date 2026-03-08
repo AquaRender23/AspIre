@@ -1,0 +1,475 @@
+/* RESET */
+
+html,body{
+margin:0;
+padding:0;
+}
+
+*{
+box-sizing:border-box;
+font-family:Segoe UI;
+}
+
+
+/* BODY */
+
+body{
+
+min-height:100vh;
+overflow-y:auto;
+
+background:url("/static/images/bg.jpeg");
+background-size:cover;
+background-position:center;
+
+padding-top:18px;
+
+}
+
+
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+width:90%;
+margin:0 auto 12px auto;
+
+padding:6px 20px;
+
+background:rgba(255,255,255,0.28);
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+border:1px solid rgba(255,255,255,0.3);
+
+box-shadow:0 8px 18px rgba(0,0,0,0.1);
+
+}
+
+.menu a{
+text-decoration: none;
+}
+
+
+/* LOGO */
+
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.logo img{
+height:50px;
+}
+
+
+
+/* ASPIRE TEXT */
+
+.aspire{
+font-size:24px;
+font-weight:700;
+letter-spacing:1px;
+}
+
+.ai{
+color:#006400;
+}
+
+.spire{
+color:#9f1811;
+}
+
+
+
+/* MENU */
+
+.menu a{
+
+margin:0 16px;
+font-weight:600;
+cursor:pointer;
+
+color:#8b0000;
+
+transition:0.2s;
+
+}
+
+.menu a:hover{
+
+color:#006400;
+transform:scale(1.05);
+
+}
+
+
+.menu a.active{
+
+background:rgba(2,48,32,0.8);
+color:#fff;
+
+padding:4px 10px;
+border-radius:8px;
+
+}
+
+
+
+/* LOGOUT */
+
+.logout-btn{
+
+background:#8b0000;
+color:white !important;
+
+padding:6px 12px;
+
+border-radius:8px;
+
+}
+.logout-btn:hover{
+
+background:#6e0000;
+transform:scale(1.05);
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+text-align:center;
+margin-top:10px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+margin-bottom:6px;
+
+}
+
+.hero p{
+
+color:#555;
+margin-bottom:14px;
+
+}
+
+
+
+/* BUTTON */
+
+.main-btn{
+
+background:#e4574f;
+color:white;
+
+border:none;
+
+padding:12px 28px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+transition:0.3s;
+
+}
+
+.main-btn:hover{
+
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+
+
+/* MAIN GRID */
+
+.main{
+
+display:grid;
+grid-template-columns:280px 1fr;
+
+gap:28px;
+
+width:90%;
+margin:20px auto;
+
+}
+
+
+
+/* CARDS */
+
+.card{
+
+background:rgba(255,255,255,0.22);
+
+backdrop-filter:blur(12px);
+
+padding:18px;
+
+border-radius:18px;
+
+border:1px solid rgba(255,255,255,0.25);
+
+box-shadow:0 10px 20px rgba(0,0,0,0.15);
+
+}
+
+
+
+/* PROFILE */
+
+.profile p{
+margin:8px 0;
+font-size:14px;
+}
+
+
+
+/* PROFILE POPUP */
+
+.profile-popup{
+
+display:none;
+
+margin-top:15px;
+
+background:rgba(255,255,255,1.00);
+
+backdrop-filter:blur(12px);
+
+padding:16px;
+
+border-radius:18px;
+
+}
+
+.profile-popup input{
+
+width:100%;
+padding:7px;
+
+border:none;
+border-radius:6px;
+
+margin:7px 0;
+
+}
+
+
+
+/* CAREER CARDS */
+
+.career-cards{
+
+display:flex;
+flex-direction:row;
+justify-content:space-between;
+gap:22px;
+
+margin:12px 0 16px;
+
+}
+
+.career{
+
+width:250px;
+text-align:center;
+
+position:relative;
+
+transition:0.3s;
+
+}
+
+.career:hover{
+transform:translateY(-6px);
+}
+
+.career img{
+
+width:95%;
+margin:10px 0;
+
+}
+
+/* TITLE */
+
+.career h4{
+
+font-size:20px;
+margin:8px 0;
+
+}
+
+.profile-field{
+font-size:18px;
+margin-bottom:12px;
+}
+
+.profile-field strong{
+font-size:20px;
+}
+
+/* MATCH PERCENT */
+
+.percent{
+
+position:absolute;
+
+top:6px;
+right:6px;
+
+padding:4px 9px;
+
+border-radius:14px;
+
+color:white;
+font-size:12px;
+
+}
+
+.green{background:#2e9d59;}
+.red{background:#e4574f;}
+.orange{background:#f59e0b;}
+
+
+
+/* BUTTON */
+
+.btn{
+
+margin-top:6px;
+
+padding:8px 16px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+background:#f0f0f0;
+
+transition:0.3s;
+
+}
+
+.btn:hover{
+
+background:#8b0000;
+color:white;
+
+}
+
+
+
+/* HISTORY */
+
+.history{
+
+margin-top:30px;
+
+}
+
+.history li{
+margin:8px 0;
+}
+
+
+
+/* CHATBOT */
+
+.chatbot{
+
+position:fixed;
+right:30px;
+bottom:30px;
+
+}
+
+
+
+.chat-circle{
+
+width:85px;
+height:85px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+background:rgba(228,87,79,0.50);
+
+backdrop-filter:blur(50px);
+
+border-radius:50%;
+
+cursor:pointer;
+
+}
+
+#bot{
+width:100px;
+}
+
+.chat-circle:hover{
+
+transform:scale(1.1);
+
+background:rgba(228,87,79,0.45);
+
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+
+}
+
+
+
+.chatbox{
+
+display:none;
+
+position:absolute;
+
+bottom:85px;
+right:0;
+
+width:250px;
+
+background:rgba(255,255,255,1.00);
+
+backdrop-filter:blur(12px);
+
+padding:16px;
+
+border-radius:18px;
+
+}
+
+.chatbox input{
+
+width:100%;
+padding:7px;
+
+border:none;
+border-radius:6px;
+
+margin-top:7px;
+
+}

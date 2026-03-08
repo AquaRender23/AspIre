@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<title>Aspire AI</title>
+
+<link rel="stylesheet" href="/static/css/home.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="logo">
+
+<img src="/static/images/logo.png">
+
+<h2 class="aspire">
+<span class="ai">A</span><span class="spire">SP</span><span class="ai">I</span><span class="spire">RE</span>
+</h2>
+
+</div>
+
+
+<div class="menu">
+<a href="/home" class="active">Home</a>
+<a href="/career_insights">Career Insights</a>
+<a href="/career_insights">Results</a>
+<a href="/history">History</a>
+
+<a href="/logout" class="logout-btn">Logout</a>
+
+</div>
+
+</div>
+
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>Welcome back, {{ user.name }} 👋</h1>
+
+<p>Ready to discover your ideal career path?</p>
+
+<a href="/questionnaire">
+<button class="main-btn">Take Career Assessment</button>
+</a>
+
+</div>
+
+
+
+<!-- MAIN CONTENT -->
+
+<div class="main">
+
+
+
+<!-- PROFILE -->
+
+<div class="profile card">
+
+<h3> --------- PROFILE ---------- </h3>
+
+<p class="profile-field"><strong>Name :</strong> {{ user.name }}</p>
+<p class="profile-field"><strong>Phone :</strong> {{ user.phone }}</p>
+<p class="profile-field"><strong>Email :</strong> {{ user.email }}</p>
+<!-- <p class="profile-field"><strong>Skills :</strong> {{ user.skills }}</p>
+<p class="profile-field"><strong>Interests :</strong> {{ user.interests }}</p>
+<p class="profile-field"><strong>Education :</strong> {{ user.education }}</p> -->
+
+<button class="btn edit-btn" onclick="toggleProfile()">Edit Profile</button>
+
+
+<!-- PROFILE POPUP -->
+
+<div id="profile-popup" class="profile-popup">
+
+<h4>Edit Profile</h4>
+
+<input type="text" placeholder="Name">
+<input type="text" placeholder="Phone">
+<input type="text" placeholder="Email">
+<!-- <input type="text" placeholder="Skills">
+<input type="text" placeholder="Interests"> -->
+
+<button class="btn save-btn">Save</button>
+
+</div>
+
+</div>
+
+
+
+<!-- CAREERS -->
+
+<div class="careers">
+
+<h3>Your Latest Career Matches</h3>
+
+<div class="career-cards">
+
+
+<div class="career card">
+
+<span class="percent green">92%</span>
+
+<img src="/static/images/data_sci.png">
+
+<h4>Data Scientist</h4>
+
+<button class="btn view-btn">View Details</button>
+
+</div>
+
+
+<div class="career card">
+
+<span class="percent red">87%</span>
+
+<img src="/static/images/lawyer.png">
+
+<h4>Lawyer</h4>
+
+<button class="btn view-btn">View Details</button>
+
+</div>
+
+
+<div class="career card">
+
+<span class="percent orange">85%</span>
+
+<img src="/static/images/business_analyst.png">
+
+<h4>UX Business Analyst</h4>
+
+<button class="btn view-btn">View Details</button>
+
+</div>
+
+</div>
+
+
+
+<!-- HISTORY -->
+
+<div class="history card">
+
+<h3>Previous Assessments</h3>
+
+<ul>
+
+<li>📅 Assessment –  12:45pm March 8</li>
+<li>📅 Assessment – 4:34pm March 8</li>
+<li>📅 Assessment – 9:27 March 8</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- CHATBOT -->
+
+<div class="chatbot">
+
+<div class="chat-circle" onclick="toggleChat()">
+<img id="bot" src="../static/images/chatbot.png">
+</div>
+
+
+<div id="chatbox" class="chatbox">
+
+<h4>Hello 👋</h4>
+
+<p>Ask me any career question</p>
+
+<input placeholder="Type your question...">
+
+<button class="btn">Send</button>
+
+</div>
+
+</div>
+
+
+<script src="/static/home.js"></script>
+
+</body>
+</html>

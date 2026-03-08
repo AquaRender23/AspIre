@@ -1,0 +1,221 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+
+background-image:url("/static/images/bg.jpeg");
+background-size:100%;
+background-position:top-left;
+
+height:100vh;
+
+padding:30px 60px;
+
+max-width:1400px;
+margin:auto;
+
+overflow:hidden;
+
+display:flex;
+flex-direction:column;
+
+}
+
+
+/* NAVBAR (same as your page) */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(255,255,255,0.3);
+
+backdrop-filter:blur(10px);
+
+padding:15px 30px;
+
+border-radius:15px;
+
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+font-family:'Kaushan Script';
+font-size:28px;
+color:#6b0f1a;
+}
+
+.logo-area img{
+width:40px;
+}
+
+.nav-links a{
+
+margin-left:25px;
+text-decoration:none;
+color:#6b0f1a;
+
+padding:8px 14px;
+border-radius:8px;
+
+font-weight:500;
+
+transition:0.25s;
+
+}
+
+/* LOGOUT BUTTON */
+
+.logout-btn{
+
+background:#8b0000;   /* maroon */
+
+color:white !important;
+
+padding:8px 18px;
+
+border-radius:10px;
+
+margin-left:25px;
+
+font-weight:500;
+
+text-decoration:none;
+
+transition:0.25s;
+
+}
+
+.logout-btn:hover{
+
+background:#5a0000;   /* dark maroon */
+
+color:white !important;
+
+}
+
+.nav-links a:hover{
+color:#1b5e20;
+}
+
+
+
+/* TITLE */
+
+.title{
+text-align:center;
+margin:40px 0 40px 0;
+font-size:34px;
+color:#6b0f1a;
+}
+
+/* CIRCLE CONTAINER */
+
+.circle-container{
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+gap:60px;
+
+flex:1;
+
+}
+
+
+/* CIRCLE CARD */
+
+.circle-card{
+
+width:260px;
+height:260px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(10px);
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+transition:0.25s;
+
+}
+
+.circle-card:hover{
+transform:translateY(-6px) scale(1.03);
+}
+
+
+
+/* ICON */
+
+.icon{
+font-size:40px;
+margin-bottom:8px;
+}
+
+
+
+/* TEXT */
+
+.circle-card h3{
+color:#6b0f1a;
+margin-bottom:6px;
+margin:5px 0;
+}
+
+.circle-card p{
+font-size:14px;
+margin-bottom:12px;
+margin:5px 0 10px 0;
+}
+
+
+
+/* BUTTON */
+
+.main-btn{
+
+background:#6b0f1a;
+
+color:white;
+
+border:none;
+
+padding:8px 16px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+font-size:14px;
+
+transition:0.2s;
+
+margin-top:8px;
+
+}
+
+.main-btn:hover{
+
+background:#1b5e20;
+
+}

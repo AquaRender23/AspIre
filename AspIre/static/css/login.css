@@ -1,0 +1,151 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins, sans-serif;
+}
+
+body{
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+background-image:url("/static/images/bg.jpeg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+}
+
+/* glass card */
+
+.login-container{
+
+width:380px;
+
+padding:30px;
+
+background:rgba(255,255,255,0.18);
+
+backdrop-filter:blur(12px);
+
+border-radius:15px;
+
+border:1px solid rgba(255,255,255,0.4);
+
+box-shadow:0 8px 32px rgba(0,0,0,0.2);
+
+text-align:center;
+
+}
+
+/* logo */
+
+.logo{
+
+width:100px;
+
+margin-bottom:-10px;
+
+}
+
+/* title */
+
+h1{
+
+font-family:'Kaushan Script', cursive;
+
+color:#b91c1c;
+
+font-size:38px;
+
+margin-bottom:10px;
+
+margin-top: 10px;
+
+}
+
+/* inputs */
+
+input{
+
+width:100%;
+
+padding:12px;
+
+margin:8px 0;
+
+border-radius:8px;
+
+border:1px solid rgba(255,255,255,0.5);
+
+background:rgba(255,255,255,0.4);
+
+outline:none;
+
+}
+
+/* button */
+
+button{
+
+width:100%;
+
+padding:12px;
+
+margin-top:10px;
+
+border:none;
+
+border-radius:8px;
+
+background:#c62828;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:0.2s;
+
+}
+
+button:hover{
+
+transform:scale(1.02);
+
+background:#b71c1c;
+
+}
+
+/* register text */
+
+.register-link{
+
+margin-top:10px;
+
+font-size:14px;
+
+}
+
+.register-link a{
+
+color:#ff6b6b;
+
+font-weight:bold;
+
+text-decoration:none;
+
+}
+
+.welcome{
+font-family:'Nunito', sans-serif;
+font-size:25px;
+font-weight:700;
+color:#444;
+margin-bottom:12px
+}

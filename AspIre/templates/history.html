@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AspIre Assessment History</title>
+
+<link rel="stylesheet" href="/static/css/history.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<div class="navbar">
+
+<div class="logo-area">
+<img src="/static/images/logo.png">
+<span>AspIre</span>
+</div>
+
+<div class="nav-links">
+
+<a href="/">Home</a>
+<a class="active" href="/history">History</a>
+<a href="/logout" class="logout-btn">Logout</a>
+
+</div>
+
+</div>
+
+
+
+<h1 class="title">Assessment History</h1>
+
+
+
+<!-- HISTORY CONTAINER -->
+
+<div class="history-container">
+
+
+{% for item in history %}
+
+<div class="history-card">
+
+<h3>
+Assessment — {{ item.date.strftime("%B %d") }}
+</h3>
+
+<div class="career-results">
+
+<div class="career-item">
+<span>{{ item.top1 }}</span>
+<div class="score">{{ item.score1 }}%</div>
+</div>
+
+<div class="career-item">
+<span>{{ item.top2 }}</span>
+<div class="score">{{ item.score2 }}%</div>
+</div>
+
+<div class="career-item">
+<span>{{ item.top3 }}</span>
+<div class="score">{{ item.score3 }}%</div>
+</div>
+
+</div>
+
+<a href="/career_insights/{{ item.top1 | lower | replace(' ', '_') }}">
+<button class="view-analysis">View Detailed Analysis</button>
+</a>
+
+</div>
+
+{% endfor %}
+
+
+</div>
+
+</body>
+
+</html>

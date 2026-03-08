@@ -1,0 +1,149 @@
+<style>
+
+html, body{
+height:100%;
+margin:0;
+padding:0;
+}
+
+*{
+box-sizing:border-box;
+font-family:Poppins, sans-serif;
+}
+
+body{
+margin:0;
+height:100vh;
+
+display:flex;
+justify-content:center;   /* centers horizontally */
+align-items:center;       /* centers vertically */
+
+background-image:url("/static/images/bg.jpeg");
+background-repeat:no-repeat;
+background-size:cover;
+background-position:center;
+}
+
+/* card */
+
+.register-container{
+
+width:350px;
+padding:25px;
+
+background: rgba(255,255,255,0.15);   /* transparent glass */
+
+border-radius:16px;
+
+backdrop-filter: blur(12px);          /* glass blur */
+-webkit-backdrop-filter: blur(12px);
+
+border:1px solid rgba(255,255,255,0.3);
+
+box-shadow:0 8px 32px rgba(0,0,0,0.25);
+
+text-align:center;
+
+}
+
+/* logo */
+
+.logo{
+width:100px;
+display:block;
+margin:0 auto;
+margin-bottom:-30px;   /* pulls AspIre text up */
+}
+
+/* title */
+
+h1{
+
+font-family:'Kaushan Script', cursive;
+
+color:#b91c1c;
+
+font-size:39px;
+
+font-weight:600;
+
+
+margin-top:25px;
+margin-bottom:5px;
+
+letter-spacing:1px;
+
+}
+
+/* inputs */
+
+input{
+
+width:100%;
+
+padding:10px;
+
+margin:7px 0;
+
+border-radius:8px;
+
+border:1px solid rgba(255,255,255,0.4);
+
+background: rgba(255,255,255,0.25);
+
+color:#333;
+
+outline:none;
+
+}
+
+input:focus{
+outline:none;
+border:1px solid #ff4d4d;
+}
+
+/* button */
+
+button{
+
+width:100%;
+
+padding:11px;
+
+margin-top:10px;
+
+border:none;
+
+border-radius:8px;
+
+background: linear-gradient(135deg,#ff4b4b,#b31217);
+
+color:white;
+
+font-size:15px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+transform:scale(1.02);
+transition:0.2s;
+}
+
+.login-link{
+
+margin-top:6px;
+
+font-size:13px;
+
+}
+
+.login-link a{
+color:#ff6b6b;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>

@@ -1,0 +1,309 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins;
+}
+
+body{
+
+background-image:url("/static/images/bg_long.png");
+background-size:100%;
+background-position:top-left;
+padding:40px 80px;
+max-width:1400px;
+margin:auto;
+
+}
+
+
+/* NAVBAR */
+
+.navbar{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+background:rgba(255,255,255,0.3);
+
+backdrop-filter:blur(10px);
+
+padding:15px 30px;
+
+border-radius:15px;
+
+}
+
+.logo-area{
+display:flex;
+align-items:center;
+gap:10px;
+font-family:'Kaushan Script';
+font-size:28px;
+color:#6b0f1a;
+}
+
+.logo-area img{
+width:40px;
+}
+
+.nav-links a{
+
+margin-left:25px;
+text-decoration:none;
+color:#6b0f1a;   /* maroon */
+
+padding:8px 14px;
+border-radius:8px;
+
+font-weight:500;
+
+transition:0.25s;
+
+}
+
+.nav-links a:hover{
+
+color:#1b5e20;   /* dark green */
+
+}
+
+.active{
+
+background:#1b5e20;
+color:white !important;
+
+}
+
+/* PAGE TITLE */
+
+.title{
+text-align:center;
+margin:50px 0 30px 0;
+font-size:36px;
+}
+
+
+/* GRID LAYOUT */
+
+.career-grid{
+
+column-count:2;
+column-gap:20px;
+
+max-width:950px;
+margin:auto;
+
+}
+/* LEFT COLUMN */
+
+.career-options-card{
+grid-column:1;
+}
+
+.salary-card{
+grid-column:1;
+}
+
+
+/* RIGHT COLUMN */
+
+.demand-card{
+grid-column:2;
+}
+
+.roadmap-card{
+grid-column:2;
+}
+
+.future-card{
+grid-column:2;
+}
+
+.skills-card{
+grid-column:2;
+}
+
+.demand-card h3{
+margin-bottom:18px;
+}
+
+
+/* GLASS CARDS */
+
+.career-grid div{
+
+background:rgba(255,255,255,0.25);
+
+backdrop-filter:blur(10px);
+
+padding:20px;
+
+border-radius:16px;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+break-inside:avoid;
+
+margin-bottom:30px;
+
+}
+
+.career-grid div:hover{
+transform:translateY(-4px);
+transition:0.2s ease;
+}
+
+.career-card{
+
+column-span:all;
+
+}
+
+.courses-card{
+margin-top:0;
+}
+
+.demand-card{
+break-before: column;
+}
+
+.career-card{
+grid-column: span 2;
+}
+
+.courses-card{
+grid-column: span 2;
+}
+
+
+/* TABLE */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+margin-top:10px;
+
+}
+
+th,td{
+
+padding:10px;
+
+border-bottom:1px solid rgba(0,0,0,0.1);
+
+text-align:left;
+
+}
+
+th{
+background:#e96d6d;
+color:white;
+}
+
+
+/* LIST */
+
+ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+.countries span{
+margin-right:15px;
+font-weight:600;
+}
+
+.countries{
+margin-top:10px;
+}
+
+.career-options-card{
+
+background: rgba(255,255,255,0.25);
+backdrop-filter: blur(12px);
+
+padding:22px;
+
+border-radius:16px;
+
+margin-top:18px;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.12);
+
+}
+
+.career-options-card h3{
+
+margin-bottom:12px;
+font-size:18px;
+
+}
+
+.career-tags{
+
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+
+}
+
+.career-tags span{
+
+background:#f4d8d8;
+
+padding:8px 14px;
+
+border-radius:20px;
+
+font-size:14px;
+
+}
+
+.career-img{
+width:120px;
+margin-top:10px;
+}
+
+/* COURSES WITH VIEW BUTTON */
+
+.course-item{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-top:8px;
+}
+
+.view-btn{
+
+background:#6b0f1a;   /* maroon theme */
+
+color:white;
+
+border:none;
+
+padding:6px 14px;
+
+border-radius:6px;
+
+cursor:pointer;
+
+font-size:14px;
+
+transition:0.2s;
+
+}
+
+.view-btn:hover{
+
+background:#1b5e20;   /* green hover */
+
+}
+
+.course-item span{
+max-width:75%;
+}

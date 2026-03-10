@@ -86,8 +86,6 @@ The model uses a supervised classification approach trained on student profile d
 - CGPA range
 - Certifications, work experience, and Masters plans
 
-Manual keyword rules override the model for medical and law-related inputs.
-
 ## Routes
 
 | Route | Description |

@@ -1,0 +1,830 @@
+{
+  "data_scientist": {
+    "title": "Data Scientist",
+    "description": "Analyze complex data to extract insights and support business decision making.",
+    "paths": [
+      "Data Analyst",
+      "Business Intelligence Analyst",
+      "AI Research Scientist",
+      "Machine Learning Engineer"
+    ],
+    "courses": [
+      {
+        "name": "Machine Learning : Andrew Ng (Coursera)",
+        "link": "https://www.coursera.org/learn/machine-learning"
+      },
+      {
+        "name": "Python for Data Science : IBM",
+        "link": "https://www.coursera.org/learn/python-for-applied-data-science-ai"
+      },
+      {
+        "name": "Data Science Specialization : Johns Hopkins University",
+        "link": "https://www.coursera.org/specializations/jhu-data-science"
+      },
+      {
+        "name": "Data Science: Machine Learning : Harvard University (edX)",
+        "link": "https://www.edx.org/course/data-science-machine-learning"
+      }
+    ],
+    "countries": [
+      "USA",
+      "Canada",
+      "Germany"
+    ],
+    "roadmap": [
+      "Learn Python and statistics",
+      "Study machine learning algorithms",
+      "Build real world data projects",
+      "Gain experience through internships"
+    ],
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "Statistics",
+      "Data Visualization"
+    ],
+    "demand": "High Demand"
+  },
+  "software_engineer": {
+    "title": "Software Engineer",
+    "description": "Design, develop and maintain software applications and systems.",
+    "paths": [
+      "Backend Developer",
+      "Frontend Developer",
+      "Full Stack Developer",
+      "Software Architect"
+    ],
+    "courses": [
+      {
+        "name": "CS50 Introduction to Computer Science : Harvard",
+        "link": "https://cs50.harvard.edu"
+      },
+      {
+        "name": "Full Stack Web Development : Coursera",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Java Programming and Software Engineering : Duke University",
+        "link": "https://www.coursera.org/specializations/java-programming"
+      },
+      {
+        "name": "Algorithms Specialization : Stanford University",
+        "link": "https://www.coursera.org/specializations/algorithms"
+      }
+    ],
+    "countries": [
+      "USA",
+      "Canada",
+      "Germany"
+    ],
+    "roadmap": [
+      "Learn programming languages",
+      "Master data structures and algorithms",
+      "Build real world software projects",
+      "Gain experience through internships"
+    ],
+    "skills": [
+      "Programming",
+      "Data Structures",
+      "Problem Solving",
+      "System Design"
+    ],
+    "demand": "Very High Demand"
+  },
+  "cybersecurity_analyst": {
+    "title": "Cybersecurity Analyst",
+    "description": "Protect computer systems and networks from cyber threats and security breaches.",
+    "paths": [
+      "Security Analyst",
+      "Ethical Hacker",
+      "Security Engineer",
+      "Security Architect"
+    ],
+    "courses": [
+      {
+        "name": "Google Cybersecurity Professional Certificate",
+        "link": "https://www.coursera.org/professional-certificates/google-cybersecurity"
+      },
+      {
+        "name": "Certified Ethical Hacker Training",
+        "link": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/"
+      },
+      {
+        "name": "Introduction to Cyber Security : NYU",
+        "link": "https://www.edx.org/course/introduction-to-cyber-security"
+      },
+      {
+        "name": "Network Security Specialization",
+        "link": "https://www.coursera.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Germany"
+    ],
+    "roadmap": [
+      "Learn networking fundamentals",
+      "Study cybersecurity principles",
+      "Practice ethical hacking",
+      "Work in security operations roles"
+    ],
+    "skills": [
+      "Network Security",
+      "Ethical Hacking",
+      "Risk Assessment",
+      "Security Tools"
+    ],
+    "demand": "Growing Demand"
+  },
+  "product_manager": {
+    "title": "Product Manager",
+    "description": "Lead product development by coordinating between engineering, design and business teams.",
+    "paths": [
+      "Associate Product Manager",
+      "Product Manager",
+      "Senior Product Manager",
+      "Product Director"
+    ],
+    "courses": [
+      {
+        "name": "Digital Product Management : University of Virginia",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Product Strategy : Northwestern University",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Product Management Fundamentals",
+        "link": "https://www.udemy.com"
+      },
+      {
+        "name": "Become a Product Manager : Udacity",
+        "link": "https://www.udacity.com"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Canada"
+    ],
+    "roadmap": [
+      "Understand product lifecycle and strategy",
+      "Learn user research and market analysis",
+      "Work closely with development teams",
+      "Launch and manage successful products"
+    ],
+    "skills": [
+      "Leadership",
+      "Product Strategy",
+      "Communication",
+      "Market Research"
+    ],
+    "demand": "High Demand"
+  },
+  "business_analyst": {
+    "title": "Business Analyst",
+    "description": "Analyze business data and processes to help organizations make better strategic decisions.",
+    "paths": [
+      "Business Analyst",
+      "Data Analyst",
+      "Business Consultant",
+      "Strategy Analyst"
+    ],
+    "courses": [
+      {
+        "name": "Business Analytics : Wharton",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Google Data Analytics Certificate",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Business Analysis Fundamentals",
+        "link": "https://www.udemy.com"
+      },
+      {
+        "name": "Excel Skills for Business",
+        "link": "https://www.coursera.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "Canada",
+      "Australia"
+    ],
+    "roadmap": [
+      "Learn data analysis tools like Excel and SQL",
+      "Understand business processes",
+      "Work with stakeholders to solve problems",
+      "Provide strategic business insights"
+    ],
+    "skills": [
+      "Data Analysis",
+      "Excel",
+      "SQL",
+      "Communication"
+    ],
+    "demand": "Very High Demand"
+  },
+  "marketing_manager": {
+    "title": "Marketing Manager",
+    "description": "Plan and execute marketing strategies to promote products and services.",
+    "paths": [
+      "Digital Marketing Manager",
+      "Brand Manager",
+      "Growth Marketing Manager",
+      "Marketing Director"
+    ],
+    "courses": [
+      {
+        "name": "Digital Marketing : Google",
+        "link": "https://learndigital.withgoogle.com"
+      },
+      {
+        "name": "Marketing Strategy : Coursera",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Content Marketing Certification : HubSpot",
+        "link": "https://academy.hubspot.com"
+      },
+      {
+        "name": "Social Media Marketing : Meta",
+        "link": "https://www.coursera.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Australia"
+    ],
+    "roadmap": [
+      "Learn marketing fundamentals",
+      "Understand digital marketing tools",
+      "Plan and run marketing campaigns",
+      "Analyze marketing performance"
+    ],
+    "skills": [
+      "SEO",
+      "Digital Marketing",
+      "Brand Strategy",
+      "Communication"
+    ],
+    "demand": "Growing Demand"
+  },
+  "doctor": {
+    "title": "Doctor",
+    "description": "Diagnose illnesses and treat patients to improve health and well-being.",
+    "paths": [
+      "General Physician",
+      "Pediatrician",
+      "Cardiologist",
+      "Medical Consultant"
+    ],
+    "courses": [
+      {
+        "name": "Clinical Medicine Fundamentals",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Human Anatomy : edX",
+        "link": "https://www.edx.org"
+      },
+      {
+        "name": "Introduction to Medical Science",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Medical Terminology",
+        "link": "https://www.udemy.com"
+      }
+    ],
+    "countries": [
+      "USA",
+      "Canada",
+      "Australia"
+    ],
+    "roadmap": [
+      "Complete MBBS degree",
+      "Finish medical internship",
+      "Choose a specialization",
+      "Gain hospital experience"
+    ],
+    "skills": [
+      "Medical Knowledge",
+      "Diagnosis",
+      "Patient Care",
+      "Communication"
+    ],
+    "demand": "Very High Demand"
+  },
+  "surgeon": {
+    "title": "Surgeon",
+    "description": "Perform surgical procedures to treat injuries, diseases and medical conditions.",
+    "paths": [
+      "General Surgeon",
+      "Neurosurgeon",
+      "Orthopedic Surgeon",
+      "Cardiothoracic Surgeon"
+    ],
+    "courses": [
+      {
+        "name": "Surgical Skills Training",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Advanced Surgical Techniques",
+        "link": "https://www.edx.org"
+      },
+      {
+        "name": "Fundamentals of Surgery",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Clinical Surgery Training",
+        "link": "https://www.udemy.com"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Canada"
+    ],
+    "roadmap": [
+      "Complete medical degree",
+      "Specialize in surgery",
+      "Complete surgical residency",
+      "Gain hospital surgical experience"
+    ],
+    "skills": [
+      "Precision",
+      "Medical Knowledge",
+      "Decision Making",
+      "Surgical Techniques"
+    ],
+    "demand": "Growing Demand"
+  },
+  "nurse": {
+    "title": "Nurse",
+    "description": "Provide healthcare support and patient care in hospitals and clinics.",
+    "paths": [
+      "Registered Nurse",
+      "Pediatric Nurse",
+      "Emergency Nurse",
+      "Nursing Supervisor"
+    ],
+    "courses": [
+      {
+        "name": "Nursing Fundamentals",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Clinical Nursing Practice",
+        "link": "https://www.edx.org"
+      },
+      {
+        "name": "Patient Care and Safety",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Healthcare Essentials",
+        "link": "https://www.udemy.com"
+      }
+    ],
+    "countries": [
+      "USA",
+      "Canada",
+      "Australia"
+    ],
+    "roadmap": [
+      "Complete nursing degree",
+      "Gain hospital experience",
+      "Specialize in healthcare areas",
+      "Advance into senior nursing roles"
+    ],
+    "skills": [
+      "Patient Care",
+      "Medical Knowledge",
+      "Communication",
+      "Critical Thinking"
+    ],
+    "demand": "High Demand"
+  },
+  "lawyer": {
+    "title": "Lawyer / Advocate",
+    "description": "Represent clients in legal matters, provide legal advice and argue cases in court.",
+    "paths": [
+      "Corporate Lawyer",
+      "Criminal Lawyer",
+      "Family Lawyer",
+      "Human Rights Lawyer"
+    ],
+    "courses": [
+      {
+        "name": "Introduction to American Law - University of Pennsylvania",
+        "link": "https://www.coursera.org/learn/american-law"
+      },
+      {
+        "name": "Contract Law - Harvard University",
+        "link": "https://www.edx.org/course/contract-law"
+      },
+      {
+        "name": "International Law - Université Catholique de Louvain",
+        "link": "https://www.coursera.org/learn/international-law"
+      },
+      {
+        "name": "Legal Research and Writing",
+        "link": "https://www.coursera.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Canada"
+    ],
+    "roadmap": [
+      "Complete a law degree (LLB)",
+      "Pass the bar exam or legal qualification",
+      "Gain experience through internships",
+      "Start practicing in a legal specialization"
+    ],
+    "skills": [
+      "Legal Research",
+      "Critical Thinking",
+      "Communication",
+      "Negotiation"
+    ],
+    "demand": "High Demand"
+  },
+  "advisor": {
+    "title": "Legal Advisor / Legal Consultant",
+    "description": "Provide legal guidance to organizations and individuals on legal matters.",
+    "paths": [
+      "Corporate Legal Advisor",
+      "Compliance Consultant",
+      "Legal Risk Consultant",
+      "Policy Advisor"
+    ],
+    "courses": [
+      {
+        "name": "Corporate Law Essentials",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Business Law Fundamentals",
+        "link": "https://www.udemy.com"
+      },
+      {
+        "name": "International Business Law",
+        "link": "https://www.edx.org"
+      },
+      {
+        "name": "Contract Management and Law",
+        "link": "https://www.coursera.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Canada"
+    ],
+    "roadmap": [
+      "Complete a law degree",
+      "Develop expertise in corporate or business law",
+      "Work with companies as a legal consultant",
+      "Advise organizations on legal compliance"
+    ],
+    "skills": [
+      "Legal Analysis",
+      "Problem Solving",
+      "Negotiation",
+      "Communication"
+    ],
+    "demand": "Growing Demand"
+  },
+  "judge": {
+    "title": "Judge",
+    "description": "Preside over court proceedings, interpret laws and deliver fair judgments.",
+    "paths": [
+      "District Judge",
+      "High Court Judge",
+      "Supreme Court Judge",
+      "Judicial Magistrate"
+    ],
+    "courses": [
+      {
+        "name": "Introduction to Judicial Systems",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Comparative Constitutional Law",
+        "link": "https://www.edx.org"
+      },
+      {
+        "name": "Public Law Foundations",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Justice and Legal Systems",
+        "link": "https://www.udemy.com"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "India"
+    ],
+    "roadmap": [
+      "Complete a law degree",
+      "Gain experience as a practicing lawyer",
+      "Pass judicial service examinations",
+      "Serve as a judge in courts"
+    ],
+    "skills": [
+      "Legal Knowledge",
+      "Decision Making",
+      "Critical Thinking",
+      "Integrity"
+    ],
+    "demand": "Moderate Demand"
+  },
+  "police_officer": {
+    "title": "Police Officer",
+    "description": "Maintain law and order, protect citizens and investigate crimes.",
+    "paths": [
+      "Police Inspector",
+      "Crime Branch Officer",
+      "Intelligence Officer",
+      "Police Superintendent"
+    ],
+    "courses": [
+      {
+        "name": "Criminal Justice System",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Forensic Science Fundamentals",
+        "link": "https://www.edx.org"
+      },
+      {
+        "name": "Introduction to Criminology",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Crime Prevention and Policing",
+        "link": "https://www.udemy.com"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "India"
+    ],
+    "roadmap": [
+      "Complete graduation",
+      "Pass police recruitment exams",
+      "Complete police academy training",
+      "Serve in law enforcement roles"
+    ],
+    "skills": [
+      "Physical Fitness",
+      "Investigation",
+      "Communication",
+      "Leadership"
+    ],
+    "demand": "High Demand"
+  },
+  "detective": {
+    "title": "Detective",
+    "description": "Investigate crimes, gather evidence and solve complex criminal cases.",
+    "paths": [
+      "Criminal Detective",
+      "Forensic Investigator",
+      "Private Detective",
+      "Cyber Crime Investigator"
+    ],
+    "courses": [
+      {
+        "name": "Introduction to Criminal Investigation",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Forensic Science Basics",
+        "link": "https://www.edx.org"
+      },
+      {
+        "name": "Crime Scene Investigation",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Criminology and Criminal Justice",
+        "link": "https://www.udemy.com"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Canada"
+    ],
+    "roadmap": [
+      "Study criminology or law enforcement",
+      "Work in police investigation units",
+      "Develop forensic and investigative skills",
+      "Solve complex criminal cases"
+    ],
+    "skills": [
+      "Observation",
+      "Analytical Thinking",
+      "Investigation",
+      "Problem Solving"
+    ],
+    "demand": "Moderate Demand"
+  },
+  "entrepreneur": {
+    "title": "Entrepreneur",
+    "description": "Start and manage businesses by developing innovative ideas, products, or services.",
+    "paths": [
+      "Startup Founder",
+      "Business Owner",
+      "Tech Entrepreneur",
+      "Social Entrepreneur"
+    ],
+    "courses": [
+      {
+        "name": "Entrepreneurship Specialization : Wharton",
+        "link": "https://www.coursera.org/specializations/wharton-entrepreneurship"
+      },
+      {
+        "name": "How to Start Your Own Business",
+        "link": "https://www.udemy.com"
+      },
+      {
+        "name": "Entrepreneurship in Emerging Economies : Harvard",
+        "link": "https://online-learning.harvard.edu/course/entrepreneurship-emerging-economies"
+      },
+      {
+        "name": "Innovation and Entrepreneurship",
+        "link": "https://www.edx.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Singapore"
+    ],
+    "roadmap": [
+      "Learn business fundamentals",
+      "Develop a startup idea",
+      "Create a business plan and secure funding",
+      "Launch and scale your business"
+    ],
+    "skills": [
+      "Leadership",
+      "Risk Taking",
+      "Problem Solving",
+      "Business Strategy"
+    ],
+    "demand": "Growing Demand"
+  },
+  "career_exploration": {
+    "title": "Career Exploration",
+    "description": "Explore different career options, industries and roles to discover interests and make informed career decisions.",
+    "paths": [
+      "Career Counselor",
+      "Industry Research Analyst",
+      "Education Consultant",
+      "Professional Mentor"
+    ],
+    "courses": [
+      {
+        "name": "Career Planning and Development",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Career Success Specialization",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Professional Development Skills",
+        "link": "https://www.udemy.com"
+      },
+      {
+        "name": "Career Development Fundamentals",
+        "link": "https://www.edx.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Canada"
+    ],
+    "roadmap": [
+      "Identify personal interests and strengths",
+      "Research different industries and job roles",
+      "Attend career fairs and networking events",
+      "Seek mentorship and career guidance"
+    ],
+    "skills": [
+      "Self Awareness",
+      "Research Skills",
+      "Communication",
+      "Decision Making"
+    ],
+    "demand": "Growing Demand"
+  },
+  "skill_development": {
+    "title": "Skill Development",
+    "description": "Focus on building technical and professional skills required for career growth and industry readiness.",
+    "paths": [
+      "Technical Trainer",
+      "Learning and Development Specialist",
+      "Corporate Trainer",
+      "Professional Coach"
+    ],
+    "courses": [
+      {
+        "name": "Learning How to Learn",
+        "link": "https://www.coursera.org/learn/learning-how-to-learn"
+      },
+      {
+        "name": "Professional Skills for the Workplace",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Personal Development and Productivity",
+        "link": "https://www.udemy.com"
+      },
+      {
+        "name": "Career Skills for the Modern Workplace",
+        "link": "https://www.edx.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "Canada",
+      "Australia"
+    ],
+    "roadmap": [
+      "Identify key skills required in your field",
+      "Enroll in relevant courses and certifications",
+      "Practice skills through projects and assignments",
+      "Continuously upgrade skills with new technologies"
+    ],
+    "skills": [
+      "Problem Solving",
+      "Critical Thinking",
+      "Communication",
+      "Adaptability"
+    ],
+    "demand": "High Demand"
+  },
+  "internships": {
+    "title": "Internships",
+    "description": "Gain practical experience by working in real organizations to develop professional skills and industry exposure.",
+    "paths": [
+      "Industry Intern",
+      "Research Intern",
+      "Startup Intern",
+      "Corporate Trainee"
+    ],
+    "courses": [
+      {
+        "name": "Internship Preparation Program",
+        "link": "https://www.coursera.org"
+      },
+      {
+        "name": "Career Development and Job Readiness",
+        "link": "https://www.edx.org"
+      },
+      {
+        "name": "Professional Communication Skills",
+        "link": "https://www.udemy.com"
+      },
+      {
+        "name": "Workplace Skills for Interns",
+        "link": "https://www.coursera.org"
+      }
+    ],
+    "countries": [
+      "USA",
+      "UK",
+      "Germany"
+    ],
+    "roadmap": [
+      "Prepare a professional resume and portfolio",
+      "Apply for internships through career portals",
+      "Gain hands-on experience in real projects",
+      "Build professional network and references"
+    ],
+    "skills": [
+      "Teamwork",
+      "Professional Communication",
+      "Time Management",
+      "Workplace Ethics"
+    ],
+    "demand": "Very High Demand"
+  }
+}

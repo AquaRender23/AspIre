@@ -74,9 +74,6 @@
 <p class="profile-field"><strong>Name :</strong> {{ user.name }}</p>
 <p class="profile-field"><strong>Phone :</strong> {{ user.phone }}</p>
 <p class="profile-field"><strong>Email :</strong> {{ user.email }}</p>
-<!-- <p class="profile-field"><strong>Skills :</strong> {{ user.skills }}</p>
-<p class="profile-field"><strong>Interests :</strong> {{ user.interests }}</p>
-<p class="profile-field"><strong>Education :</strong> {{ user.education }}</p> -->
 
 <button class="btn edit-btn" onclick="toggleProfile()">Edit Profile</button>
 
@@ -87,13 +84,15 @@
 
 <h4>Edit Profile</h4>
 
-<input type="text" placeholder="Name">
-<input type="text" placeholder="Phone">
-<input type="text" placeholder="Email">
-<!-- <input type="text" placeholder="Skills">
-<input type="text" placeholder="Interests"> -->
+<form action="/update_profile" method="POST">
 
-<button class="btn save-btn">Save</button>
+<input type="text" name="name" value="{{ user.name }}" placeholder="Name">
+<input type="text" name="phone" value="{{ user.phone }}" placeholder="Phone">
+<input type="email" name="email" value="{{ user.email }}" placeholder="Email">
+
+<button type="submit" class="btn save-btn">Save</button>
+
+</form>
 
 </div>
 
@@ -102,55 +101,71 @@
 
 
 <!-- CAREERS -->
+{% if latest == None %}
+
+<div class="careers">
+
+<h3>No assessment taken yet</h3>
+<p style="font-size:14px;color:#555;">
+Take the assessment to discover your career matches.
+</p>
+
+</div>
+
+{% else %}
 
 <div class="careers">
 
 <h3>Your Latest Career Matches</h3>
+<p style="font-size:14px;color:#555;">
+Based on your most recent career assessment
+</p>
 
 <div class="career-cards">
 
-
 <div class="career card">
 
-<span class="percent green">92%</span>
+<span class="percent green">{{ latest.results[0].score }}%</span>
 
-<img src="/static/images/data_sci.png">
+<h4>{{ latest.results[0].career }}</h4>
 
-<h4>Data Scientist</h4>
-
+<a href="/career_insights/{{ latest.results[0].career | lower | replace(' ','_') }}">
 <button class="btn view-btn">View Details</button>
-
-</div>
-
-
-<div class="career card">
-
-<span class="percent red">87%</span>
-
-<img src="/static/images/lawyer.png">
-
-<h4>Lawyer</h4>
-
-<button class="btn view-btn">View Details</button>
+</a>
 
 </div>
 
 
 <div class="career card">
 
-<span class="percent orange">85%</span>
+<span class="percent red">{{ latest.results[1].score }}%</span>
 
-<img src="/static/images/business_analyst.png">
+<h4>{{ latest.results[1].career }}</h4>
 
-<h4>UX Business Analyst</h4>
-
+<a href="/career_insights/{{ latest.results[1].career | lower | replace(' ','_') }}">
 <button class="btn view-btn">View Details</button>
+</a>
+
+</div>
+
+
+<div class="career card">
+
+<span class="percent orange">{{ latest.results[2].score }}%</span>
+
+<h4>{{ latest.results[2].career }}</h4>
+
+<a href="/career_insights/{{ latest.results[2].career | lower | replace(' ','_') }}">
+<button class="btn view-btn">View Details</button>
+</a>
 
 </div>
 
 </div>
 
+</div>
 
+{% endif %}
 
 <!-- HISTORY -->
 
@@ -160,9 +175,21 @@
 
 <ul>
 
-<li>📅 Assessment –  12:45pm March 8</li>
-<li>📅 Assessment – 4:34pm March 8</li>
-<li>📅 Assessment – 9:27 March 8</li>
+{% if assessments|length == 0 %}
+
+<p>No previous assessments yet.</p>
+
+{% else %}
+
+{% for item in assessments %}
+
+<li>
+Assessment — {{ item.date }}
+</li>
+
+{% endfor %}
+
+{% endif %}
 
 </ul>
 
@@ -179,25 +206,22 @@
 <div class="chatbot">
 
 <div class="chat-circle" onclick="toggleChat()">
-<img id="bot" src="../static/images/chatbot.png">
+<img id="bot" src="/static/images/chatbot.png">
 </div>
-
 
 <div id="chatbox" class="chatbox">
 
 <h4>Hello 👋</h4>
-
 <p>Ask me any career question</p>
 
-<input placeholder="Type your question...">
+<div id="chat-messages"></div>
 
-<button class="btn">Send</button>
+<input id="chat-input" placeholder="Type your question...">
+<button onclick="sendMessage()">Send</button>
 
 </div>
 
 </div>
-
-
 <script src="/static/home.js"></script>
 
 </body>

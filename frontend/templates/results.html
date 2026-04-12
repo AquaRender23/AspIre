@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AspIre - Results</title>
+
+<link rel="stylesheet" href="/static/css/results.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<header class="navbar">
+
+<div class="logo">
+<img src="{{ url_for('static', filename='images/logo.png') }}">
+<h2>AspIre</h2>
+</div>
+
+<nav>
+<ul>
+
+<li><a href="/home">Home</a></li>
+<li><a href="/results">Results</a></li>
+<li><a href="/history">History</a></li>
+<li><a href="/logout">Logout</a></li>
+
+</ul>
+</nav>
+
+</header>
+
+
+<!-- TITLE -->
+
+<section class="results-title">
+
+<h1>Career Assessment Results</h1>
+<p>Your recommended career domain: <b>{{ career }}</b></p>
+
+</section>
+
+
+<!-- RESULTS -->
+
+<section class="results-container">
+
+{% for r in results %}
+
+<div class="result-card">
+
+<div class="rank">{{ loop.index }}</div>
+
+<div class="career-info">
+
+<h2>{{ r.career }}</h2>
+
+<p>Recommended career path based on your interests and skills.</p>
+
+<a href="/career_insights/{{ r.career | lower | replace(' ','_') }}">
+
+<button class="view-btn">View Detailed Results</button>
+
+</a>
+
+</div>
+
+<div class="score">{{ r.score }}%</div>
+
+</div>
+
+{% endfor %}
+
+</section>
+
+
+<div class="retake">
+
+<a href="/questionnaire">
+<button>Retake Assessment</button>
+</a>
+
+</div>
+
+</body>
+
+</html>

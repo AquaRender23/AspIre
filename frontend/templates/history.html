@@ -26,7 +26,7 @@
 
 <div class="nav-links">
 
-<a href="/">Home</a>
+<a href="/home">Home</a>
 <a class="active" href="/history">History</a>
 <a href="/logout" class="logout-btn">Logout</a>
 
@@ -50,29 +50,30 @@
 <div class="history-card">
 
 <h3>
-Assessment — {{ item.date.strftime("%B %d") }}
+Assessment — {{ item.date }}
 </h3>
 
 <div class="career-results">
 
-<div class="career-item">
-<span>{{ item.top1 }}</span>
-<div class="score">{{ item.score1 }}%</div>
-</div>
+{% for r in item.results %}
 
 <div class="career-item">
-<span>{{ item.top2 }}</span>
-<div class="score">{{ item.score2 }}%</div>
+<span>{{ r.career }}</span>
+<div class="score 
+{% if loop.index == 1 %}green
+{% elif loop.index == 2 %}yellow
+{% else %}red
+{% endif %}
+">
+{{ r.score }}%
+</div>
 </div>
 
-<div class="career-item">
-<span>{{ item.top3 }}</span>
-<div class="score">{{ item.score3 }}%</div>
-</div>
+{% endfor %}
 
 </div>
 
-<a href="/career_insights/{{ item.top1 | lower | replace(' ', '_') }}">
+<a href="/career_insights/{{ item.results[0].career | lower | replace(' ', '_') }}">
 <button class="view-analysis">View Detailed Analysis</button>
 </a>
 

@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/career_insights.css') }}">
 
 <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
 </head>
@@ -23,7 +22,7 @@
 </div>
 
 <div class="nav-links">
-<a href="/">Home</a>
+<a href="/home">Home</a>
 <a class="active">Career Insights</a>
 <a href="/results">Results</a>
 <a href="/history">History</a>
@@ -54,12 +53,9 @@
 <h3>🔍 Career Paths You Can Explore</h3>
 
 <div class="career-tags">
-
-<span>{{ data.title }}</span>
-<span>Senior {{ data.title }}</span>
-<span>Lead {{ data.title }}</span>
-<span>Specialist {{ data.title }}</span>
-
+{% for path in data.get('paths', []) %}
+<span class="tag">{{ path }}</span>
+{% endfor %}
 </div>
 
 </div>
@@ -71,33 +67,14 @@
 
 <h3>🎓 Recommended Courses</h3>
 
+{% for course in data.get('courses', []) %}
 <div class="course-item">
-<span>Machine Learning – Andrew Ng (Coursera)</span>
-<a href="https://www.coursera.org/learn/machine-learning" target="_blank">
+<span class="course-name">{{ course.name }}</span>
+<a href="{{ course.link }}" target="_blank">
 <button class="view-btn">View</button>
 </a>
 </div>
-
-<div class="course-item">
-<span>Python for Data Science – IBM</span>
-<a href="https://www.coursera.org/learn/python-for-applied-data-science-ai" target="_blank">
-<button class="view-btn">View</button>
-</a>
-</div>
-
-<div class="course-item">
-<span>Data Science Professional Certificate – IBM</span>
-<a href="https://www.coursera.org/professional-certificates/ibm-data-science" target="_blank">
-<button class="view-btn">View</button>
-</a>
-</div>
-
-<div class="course-item">
-<span>Statistics for Data Science – Harvard (edX)</span>
-<a href="https://www.edx.org/learn/statistics/harvard-university-statistics-and-r" target="_blank">
-<button class="view-btn">View</button>
-</a>
-</div>
+{% endfor %}
 
 </div>
 
@@ -105,13 +82,12 @@
 <!-- DEMAND CARD -->
 
 <div class="demand-card">
-
-<h3>📈 Very High Demand</h3>
+<h3>📈 {{ data.demand }}</h3>
 
 <div class="countries">
-<span>🇺🇸 USA</span>
-<span>🇩🇪 Germany</span>
-<span>🇨🇦 Canada</span>
+{% for country in data.get('countries', []) %}
+<span>{{ country }}</span>
+{% endfor %}
 </div>
 
 <p>
@@ -124,13 +100,12 @@ This career currently has strong global demand and excellent future opportunitie
 <!-- ROADMAP -->
 
 <div class="roadmap-card">
-
 <h3>📍 Roadmap</h3>
 
 <ul>
-<li>Build strong foundational knowledge</li>
-<li>Develop practical skills through projects</li>
-<li>Gain real experience through internships or entry-level roles</li>
+{% for step in data.get('roadmap', []) %}
+<li>{{ step }}</li>
+{% endfor %}
 </ul>
 
 </div>
@@ -141,10 +116,7 @@ This career currently has strong global demand and excellent future opportunitie
 <div class="future-card">
 
 <h3>🔥 Future Demand</h3>
-
-<p>
-This career field is expected to grow significantly over the next decade.
-</p>
+<p>{{ data.demand }}</p>
 
 </div>
 
@@ -156,13 +128,9 @@ This career field is expected to grow significantly over the next decade.
 <h3>🎯 Essential Skills</h3>
 
 <ul>
-
-{% for skill in data.skills %}
-
+{% for skill in data.get('skills', []) %}
 <li>{{ skill }}</li>
-
 {% endfor %}
-
 </ul>
 
 </div>
